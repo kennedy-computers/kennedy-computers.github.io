@@ -1,8 +1,4 @@
 $(function(){
-	$(document.body).css({
-		"background-image":"url(../images/lines.png) repeat-y",
-		"background-size":"100% 4%"
-	});//set background
 	//notes
 	var ratio = window.innerWidth/window.innerHeight;
 	var invRatio = 1/ratio;
@@ -34,5 +30,12 @@ $(function(){
 	$(".notesbox").click(function(){
 		window.open(urls[parseInt(this.id.replace("notes",""))]);//open doc on dblclick
 	}).height(invRatio*0.3*window.innerWidth);
-	
+	$("h1").css({
+		"background-color":"yellow",
+		"width":"auto"
+	});
+	$(document.body).css({
+		"background-image":"url(../images/lines.png) repeat-y",
+		"background-size":"100% 4%"
+	});//set background
 });
