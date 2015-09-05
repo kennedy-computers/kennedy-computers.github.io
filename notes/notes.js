@@ -37,6 +37,7 @@ $(function(){
 	$(document.body).css({
 		"background-image":"url(../images/lines.png)",
 		"background-repeat":"repeat-y",
-		"background-size":"100% 4%"
+		"background-size":"100% 4%",
+		"background-attachment":"fixed"
 	});//set background
 });
