@@ -1,0 +1,31 @@
+.paths{
+	position: absolute;
+	display: inline-block;
+	height: 35vw;
+	width: 35%;
+	bottom: 5%;
+	outline: none;
+	border: 5px solid darkblue;
+  background-image: -webkit-linear-gradient(top, rgb(65, 165, 235), rgb(20, 110, 170));
+  background-image: -moz-linear-gradient(top, rgb(65, 165, 235), rgb(20, 110, 170));
+  background-image: linear-gradient(to bottom, rgb(65, 165, 235), rgb(20, 110, 170));
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #ffffff;
+  -webkit-transition: 150ms all;
+  -moz-transition: 150ms all;
+  transition: 150ms all;
+}
+#notes{
+	left: 10%;
+}
+#tests{
+	right: 10%;
+}
+.paths:hover{
+	border: 6px solid blue;
+  background-image: -webkit-linear-gradient(top, rgb(75, 185, 245), rgb(30, 120, 180));
+  background-image: -moz-linear-gradient(top, rgb(75, 185, 245), rgb(30, 120, 180));
+  background-image: linear-gradient(to bottom, rgb(75, 185, 245), rgb(30, 120, 180));
+}
