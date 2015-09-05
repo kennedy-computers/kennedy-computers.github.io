@@ -1,6 +1,5 @@
 $(function(){
 	$(document.body).css({
-		"background-color":"rgb(255, 255, 0)",
 		"background-image":"url(../images/lines.png) repeat-y 100% 4%"	
 	});//set background
 	//notes
