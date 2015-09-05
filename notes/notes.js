@@ -39,5 +39,5 @@ $(function(){
 		"background-image":"url(../images/lines.png) repeat-y",
 		"background-size":"100% 4%"
 	});//set background
-	},1000);
+	},10000);
 });
