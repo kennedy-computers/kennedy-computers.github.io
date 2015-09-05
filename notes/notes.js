@@ -4,6 +4,7 @@ $(function(){
 	var invRatio = 1/ratio;
 	var names = [
 		"Variables and Strings",
+		"Booleans",
 		"Conditionals",
 		"While Loop",
 		"For Loop",
@@ -11,6 +12,7 @@ $(function(){
 	];//names of the notes
 	var urls = [
 		"https://docs.google.com/document/d/1EecgKsusFAbvUtwgjJZXX8lhX7MpzNZc-UVgYtCv6iw/",
+		"https://docs.google.com/document/d/1JqIzkPY19MvzYmgLwNEBZI0AJzMfeO5BP8VRaahB07M/",
 		"https://docs.google.com/document/d/1BFH8bY-CwMxBf3tHrMjN_i6xcTFTJG5IEnS4q5X6vQA/",
 		"https://docs.google.com/document/d/1u3QczD7alRL1sdF9z0959qftYX-h9-R5_9XcDeaGCfI/",
 		"https://docs.google.com/document/d/1dfM1GmaavLKGyvanC4gaPd9Y7ysU4Oe1Jj1jRwu6xm0/",
