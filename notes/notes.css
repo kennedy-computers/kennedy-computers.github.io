@@ -3,6 +3,7 @@
 	display:inline-block;
 	width: 30%;
 	border: 1px solid black;
+	cursor: pointer;
 }
 #notes{
 	display:inline-block;
