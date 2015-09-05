@@ -32,7 +32,7 @@ $(function(){
 	}).height(invRatio*0.3*window.innerWidth);
 	$("h1").css({
 		"background-color":"yellow",
-		"width":"auto"
+		"display":"inline-block"
 	});
 	$(document.body).css({
 		"background-image":"url(../images/lines.png)",
