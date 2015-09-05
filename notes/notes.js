@@ -36,7 +36,8 @@ $(function(){
 	});
 	setTimeout(function(){
 	$(document.body).css({
-		"background-image":"url(../images/lines.png) repeat-y",
+		"background-image":"url(../images/lines.png)",
+		"background-repeat":"repeat-y",
 		"background-size":"100% 4%"
 	});//set background
 	},10000);
