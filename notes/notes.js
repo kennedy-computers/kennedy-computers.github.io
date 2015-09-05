@@ -1,6 +1,7 @@
 $(function(){
 	$(document.body).css({
-		"background-image":"url(../images/lines.png) repeat-y 100% 4%"	
+		"background-image":"url(../images/lines.png) repeat-y",
+		"background-size":"100% 4%"
 	});//set background
 	//notes
 	var ratio = window.innerWidth/window.innerHeight;
