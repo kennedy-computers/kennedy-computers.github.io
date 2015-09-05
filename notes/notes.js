@@ -34,8 +34,10 @@ $(function(){
 		"background-color":"yellow",
 		"width":"auto"
 	});
+	setTimeout(function(){
 	$(document.body).css({
 		"background-image":"url(../images/lines.png) repeat-y",
 		"background-size":"100% 4%"
 	});//set background
+	},1000);
 });
