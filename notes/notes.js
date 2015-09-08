@@ -1,7 +1,7 @@
 $(function(){
 	//notes
 	$("h1").css({
-			"background-color":"yellow"),
+			"background-color":"yellow",
 			"border-radius":"15%",
 			"opacity":"0.6"
 		});
