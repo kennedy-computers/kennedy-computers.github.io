@@ -3,11 +3,33 @@
 <title>CS Club</title>
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
+var authorized = false;
+var attempts = 0;
+function authorizeSignIn(){
+	var pass = prompt("Sign In");
+	if(pass == "comsci"){
+		authorized = true;
+	}
+	else{
+		alert("Failed");
+		attempts += 1;
+	}
+	if(attempts >= 10){
+		alert("Get off our website CREEP!");
+	}
+	
+}
+<script>
 $(function(){
-	$(".paths").css("font-size",window.innerHeight*0.06+"px");
-	$(document.body).css("background-color","rgb(255, 255, 0)");
-	$("h1, .paths").css("font-family","MS Sans Serif");
-	//$("h1").css("font-family","Comic Sans MS");
+	if(authorized){
+		$(".paths").css("font-size",window.innerHeight*0.06+"px");
+		$(document.body).css("background-color","rgb(255, 255, 0)");
+		$("h1, .paths").css("font-family","MS Sans Serif");
+		//$("h1").css("font-family","Comic Sans MS");	
+	}
+	else{
+		alert("You are not authorized");
+	}
 });
 </script>
 <link rel="stylesheet" href="main.css">
@@ -17,5 +39,7 @@ $(function(){
 <big><big><h1>Kennedy Computer Science and Electronics Club <small><sub>WEBSITE</sub></small></h1></big></big>
 <button class="paths" id="notes" onclick="location.href='notes/'">Notes and Exercises</button>
 <button class="paths" id="tests" onclick="location.href='tests/'">Tests</button>
+
+</script>
 </body>
 </html>
