@@ -28,7 +28,7 @@ $(function(){
 			.append("<img src='../images/"+val.toLowerCase()+".PNG'></iframe>")
 			.append("<div class='links'>"+val+"</div>")
 			.css({
-				"left": 8/window.innerWidth + (i%3)*31 +"%",
+				"left": "calc(8px + " + (i%3)*31 +"%)",
 				"top": 6+Math.floor(i/3)*(invRatio*30)+Math.floor(i/3)*1.5+"vw"
 			});
 	});//iterate through 'names'
