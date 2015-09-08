@@ -5,7 +5,7 @@ $(function(){
 	var names = [
 		"Variables and Strings",
 		"Booleans",
-		"Data Types"
+		"Data Types",
 		"Conditionals",
 		"While Loop",
 		"For Loop",
