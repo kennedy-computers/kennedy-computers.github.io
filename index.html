@@ -2,37 +2,25 @@
 <head>
 <title>CS Club</title>
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-var authorized = false;
-var attempts = 0;
-function authorizeSignIn(){
-	var pass = prompt("Sign In");
-	if(pass == "comsci"){
-		authorized = true;
-	}
-	else{
-		alert("Failed");
-		attempts += 1;
-	}
-	if(attempts >= 10){
-		alert("Get off our website CREEP!");
-	}
-	
-}
+<!-- Start Bravenet.com Service Code --> 
+<!-- Place this code in the header of each page that you want protected -->
+<meta name="robots" content="noindex">
+<script language="Javascript" type="text/javascript" src="http://pub17.bravenet.com/passwd/jsnorightclick.php?usernum=1454210193"></script>
+<script language="Javascript" type="text/javascript" src="http://pub17.bravenet.com/passwd/jsverify.php?usernum=1454210193"></script>
+<noscript>
+  <meta http-equiv="refresh" content="0; url=http://pub17.bravenet.com/passwd/verify.php?usernum=1454210193"/>
+  <body style="display:none;">
+</noscript>
+<!-- END DO NOT MODIFY -->
 <script>
 $(function(){
-	if(authorized){
 		$(".paths").css("font-size",window.innerHeight*0.06+"px");
 		$(document.body).css("background-color","rgb(255, 255, 0)");
 		$("h1, .paths").css("font-family","MS Sans Serif");
 		//$("h1").css("font-family","Comic Sans MS");	
 	}
-	else{
-		alert("You are not authorized");
-	}
 });
 </script>
-<button id="awesome" onclick="authorizeSignIn();">Sign IN</button>
 <link rel="stylesheet" href="main.css">
 <link rel="shortcut icon" href="images/kennedy middle school.ico">
 </head>
@@ -40,7 +28,18 @@ $(function(){
 <big><big><h1>Kennedy Computer Science and Electronics Club <small><sub>WEBSITE</sub></small></h1></big></big>
 <button class="paths" id="notes" onclick="location.href='notes/'">Notes and Exercises</button>
 <button class="paths" id="tests" onclick="location.href='tests/'">Tests</button>
-
+<!-- Start Bravenet.com Service Code -->
+<div style="text-align: right; width:210px; padding:5px;">
+  <form action="http://pub17.bravenet.com/passwd/show.php" method="post" target="_top">
+    <input type="hidden" name="usernum" value="1454210193" />
+    <div style="padding:3px; font: bold 13px arial;">Enter Password Protected Area</div>
+    <div style="padding:3px; font: normal 13px arial;">Username: <input type="text" name="uname" size="15" maxlength="30" style="width: 100px"></div>
+    <div style="padding:3px; font: normal 13px arial;">Password: <input type="password" name="passwd" size="15" maxlength="30" style="width: 100px"></div>
+    <div style="padding:3px;"><a style="font: bold 11px arial;" href="http://pub17.bravenet.com/passwd/requestpwd.php?usernum=1454210193" target="_top">Request Password</a> &nbsp; <input type="submit" name="submit" value="Login" style="width: 65px;"></div>
+    <div style="padding:5px; font: normal 11px arial;"><a href="http://www.bravenet.com">Powered by Bravenet</a></div>
+  </form>
+</div>
+<!-- End Bravenet.com Service Code -->
 </script>
 </body>
 </html>
