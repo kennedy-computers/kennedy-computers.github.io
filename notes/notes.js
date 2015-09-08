@@ -1,7 +1,10 @@
 $(function(){
 	//notes
-	$("h1").css("background-color","rgba(255,255,0,0.6)")
-		.css("border-radius","15%");
+	$("h1").css({
+			"background-color":"yellow"),
+			"border-radius":"15%",
+			"opacity":"0.6"
+		});
 	var ratio = window.innerWidth/window.innerHeight;
 	var invRatio = 1/ratio;
 	var names = [
