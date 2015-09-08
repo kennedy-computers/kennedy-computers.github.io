@@ -23,7 +23,7 @@ h1:nth-of-type(0){
 	background-image: url(../images/lines.png);
 	background-repeat: repeat-y;
 	background-attachment: fixed;
-	background-size:100% 4%;
+	background-size:102% 4%;
 	position:absolute;
 	top:8%;
 	width:102%;
