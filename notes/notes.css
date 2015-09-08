@@ -17,9 +17,10 @@ h1{
 }
 h1:nth-of-type(1){
 	position:absolute;
-	top: 2%;
+	top: 0%;
 }
 #back{
+	position:fixed;
 	background-image: url(../images/lines.png);
 	background-repeat: repeat-y;
 	background-attachment: fixed;
