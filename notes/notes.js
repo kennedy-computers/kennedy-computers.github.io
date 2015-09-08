@@ -1,7 +1,7 @@
 $(function(){
 	//notes
-	$("h1").eq(0).css("top", 5*Math.round($("h1").offset().top/5)+"px");
-	$("h1").eq(1).css("top", 5*Math.round($("h1").offset().top/5)+"px");
+	$("h1").css("background","rgba(255,255,0,0.6)");
+	$("h1").css("border-radius","15%");
 	var ratio = window.innerWidth/window.innerHeight;
 	var invRatio = 1/ratio;
 	var names = [
