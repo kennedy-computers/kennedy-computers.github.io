@@ -16,7 +16,9 @@ h1{
 	display: inline-block;
 }
 #back{
-	background-image: url(../images/lines.png) repeat-y fixed;
+	background-image: url(../images/lines.png);
+	background-repeat: repeat-y;
+	background-attachment: fixed;
 	background-size:100% 4%;
 	position:absolute;
 	top:4%;
