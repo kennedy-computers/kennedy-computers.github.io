@@ -15,6 +15,19 @@ h1{
 	border-radius: 10%;
 	display: inline-block;
 }
+#back{
+	background-image: url(../images/lines.png) repeat-y fixed;
+	background-size:100% 4%;
+	position:absolute;
+	top:4%;
+	width:100%;
+	display:inline-block;
+	height:96%;
+	left:0;
+}
+body{
+	background-color:yellow;
+}
 .links{
 	display:inline-block;
 	position:absolute;
