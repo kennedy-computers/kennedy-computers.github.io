@@ -30,12 +30,6 @@ $(function(){
 			});
 	});//iterate through 'names'
 	$(".notesbox").click(function(){
-		window.open(urls[parseInt(this.id.replace("notes",""))]);//open doc on dblclick
+		window.open(urls[parseInt(this.id.replace("notes",""))]);//open doc on click
 	}).height(invRatio*0.3*window.innerWidth);
-	$(document.body).css({
-		"background-image":"url(../images/lines.png)",
-		"background-repeat":"repeat-y",
-		"background-size":"100% 4%",
-		"background-attachment":"fixed"
-	});//set background
 });
