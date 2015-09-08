@@ -2,6 +2,7 @@ $(function(){
 	//notes
 	var ratio = window.innerWidth/window.innerHeight;
 	var invRatio = 1/ratio;
+	var imgRatio = 1490/3200;
 	var names = [
 		"Variables and Strings",
 		"Booleans",
@@ -33,5 +34,5 @@ $(function(){
 	});//iterate through 'names'
 	$(".notesbox").click(function(){
 		window.open(urls[parseInt(this.id.replace("notes",""))]);//open doc on click
-	}).height(invRatio*0.3*window.innerWidth);
+	}).height(imgRatio*0.3*window.innerWidth);
 });
