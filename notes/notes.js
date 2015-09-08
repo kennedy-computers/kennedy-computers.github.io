@@ -32,10 +32,6 @@ $(function(){
 	$(".notesbox").click(function(){
 		window.open(urls[parseInt(this.id.replace("notes",""))]);//open doc on dblclick
 	}).height(invRatio*0.3*window.innerWidth);
-	$("h1").css({
-		"background-color":"yellow",
-		"display":"inline-block"
-	});
 	$(document.body).css({
 		"background-image":"url(../images/lines.png)",
 		"background-repeat":"repeat-y",
