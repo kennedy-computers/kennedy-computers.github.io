@@ -24,7 +24,6 @@ h1:nth-of-type(1){
 	background-image: url(../images/lines.png);
 	background-repeat: repeat-y;
 	background-size:102% 4%;
-	position:absolute;
 	top:8%;
 	width:102%;
 	display:block;
