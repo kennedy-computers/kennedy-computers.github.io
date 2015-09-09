@@ -36,6 +36,6 @@ $(function(){
 		window.open(urls[parseInt(this.id.replace("notes",""))]);//open doc on click
 	}).height(imgRatio*0.3*window.innerWidth);
 	var $nb = $(".notesbox").eq($(".notesbox").length);
-	$("h1").eq(1).css("top",$nb.offset().top+$nb.height());
+	$("h1").eq(1).css("top",$nb.offset().top+$nb.height()+10+"px");
 	
 });
