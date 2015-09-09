@@ -29,7 +29,7 @@ $(function(){
 			.append("<div class='links'>"+val+"</div>")
 			.css({
 				"left": "calc(8px + " + (i%3)*31 +"%)",
-				"top": 6+Math.floor(i/3)*(invRatio*30)+Math.floor(i/3)*1.5+"vw"
+				"top": 6+Math.floor(i/3)*(invRatio*30)+Math.floor(i/3)*1.1+"vw"
 			});
 	});//iterate through 'names'
 	$(".notesbox").click(function(){
