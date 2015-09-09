@@ -7,11 +7,14 @@
 <script>
 var attempts = 0;
 var authorized = false;
+var date = new Date();
 function authorize(){
+	date = new Date();
 	if(attempts >= 5){
-		$.cookie("blocked","true",{expires: 5/1440, path: '/'});
+		$.cookie("blocked","true",{expires: date.getTime()+5*60000, path: '/'});
 		document.write("<h1>You have been blocked for 5 minutes.</h1>");
 	}
+	else{
 	else var pass = prompt("Enter the password: ");
 	if(pass == "CougarsCS"){
 		authorized = true;
@@ -20,6 +23,7 @@ function authorize(){
 	else{
 		attempts++;
 		authorize();
+	}
 	}
 }
 $(function(){
