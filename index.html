@@ -23,6 +23,7 @@ function authorize(){
 	}
 }
 $(function(){
+	alert($.cookie("blocked"));
 	if($.cookie("blocked")=="true") document.write("<h1>You have been blocked. Please try again later.</h1>");
 	else{
 	$(".paths").css("font-size",window.innerHeight*0.06+"px");
