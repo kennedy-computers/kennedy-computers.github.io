@@ -5,37 +5,11 @@
 <script src="jquery.cookie.js"></script>
 <link rel="stylesheet" href="main.css">
 <script>
-var attempts = 0;
-var authorized = false;
-var date = new Date();
-function authorize(){
-	date = new Date();
-	if(attempts >= 5){
-		$.cookie("blocked","true",{expires: date.getTime()+5*60000, path: '/'});
-		document.write("<h1>You have been blocked for 5 minutes.</h1>");
-	}
-	else{
-	else var pass = prompt("Enter the password: ");
-	if(pass == "CougarsCS"){
-		authorized = true;
-		$.cookie("authorized","true",{path: '/'});
-	}
-	else{
-		attempts++;
-		authorize();
-	}
-	}
-}
 $(function(){
-	alert($.cookie("blocked"));
-	if($.cookie("blocked")=="true") document.write("<h1>You have been blocked. Please try again later.</h1>");
-	else{
 	$(".paths").css("font-size",window.innerHeight*0.06+"px");
 	$(document.body).css("background-color","rgb(255, 255, 0)");
 	$("h1, .paths").css("font-family","MS Sans Serif");
-	authorize();
 	//$("h1").css("font-family","Comic Sans MS");
-	}
 });
 </script>
 <link rel="stylesheet" href="main.css">
