@@ -3,6 +3,16 @@
 <title>Additional Resources</title>
 </head>
 <body>
-
+<script>
+  window.onload = function(){
+    var urls = [];
+    for(int i = 0; i < urls.length; i++){
+      var a = document.createElement("a");
+      a.setAttribute("href",urls[i]);
+      a.innerHTML = urls[i];
+      document.body.appendChild(a);
+    }
+  }
+</script>
 </body>
 </html>
