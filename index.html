@@ -15,6 +15,7 @@ function authorize(){
 	}
 	else{
 		attempts++;
+		authorize();
 	}
 	if(attempts >= 5){
 		$.cookie("blocked","true",{expires: 5/1440, path: '/'});
@@ -36,7 +37,7 @@ $(function(){
 <link rel="shortcut icon" href="images/kennedy middle school.ico">
 </head>
 <body>
-<big><big><h1>Kennedy Computer Science and Electronics Club <small><sub>WEBSITE</sub></small></h1></big></big>
+<h1>Kennedy Computer Science and Electronics Club <small><sub>WEBSITE</sub></small></h1>
 <button class="paths" id="notes" onclick="location.href='notes/'">Notes and Exercises</button>
 <button class="paths" id="tests" onclick="location.href='tests/'">Tests</button>
 </script>
