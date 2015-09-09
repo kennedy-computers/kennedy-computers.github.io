@@ -8,7 +8,11 @@
 var attempts = 0;
 var authorized = false;
 function authorize(){
-	var pass = prompt("Enter the password: ");
+	if(attempts >= 5){
+		$.cookie("blocked","true",{expires: 5/1440, path: '/'});
+		document.write("<h1>You have been blocked for 5 minutes.</h1>");
+	}
+	else var pass = prompt("Enter the password: ");
 	if(pass == "CougarsCS"){
 		authorized = true;
 		$.cookie("authorized","true",{path: '/'});
@@ -16,10 +20,6 @@ function authorize(){
 	else{
 		attempts++;
 		authorize();
-	}
-	if(attempts >= 5){
-		$.cookie("blocked","true",{expires: 5/1440, path: '/'});
-		document.write("<h1>You have been blocked for 5 minutes.</h1>");
 	}
 }
 $(function(){
