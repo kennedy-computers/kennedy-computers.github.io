@@ -4,8 +4,8 @@ h1,.paths{
 .paths{
 	position: absolute;
 	display: inline-block;
-	height: 60%;
-	width: 60vh;
+	height: 75%;
+	width: 75vh;
 	bottom: 5%;
 	outline: none;
 	border: 5px solid darkblue;
