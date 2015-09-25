@@ -21,10 +21,10 @@ h1,.paths{
   transition: 150ms all;
 }
 #notes{
-	left: 10%;
+	left: 12.5vh;
 }
 #tests{
-	right: 10%;
+	right: 12.5vh;
 }
 .paths:hover{
 	border: 6px solid blue;
