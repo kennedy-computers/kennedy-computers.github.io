@@ -5,12 +5,14 @@ $(function(){
 	var imgRatio = 1490/3200;
 	var names = [
 		[
-			"The Print Statement"
+			"The Print Statement",
+			"Conditionals"
 		]
 	];//names of the notes
 	var urls = {
 		java: [
-			"https://docs.google.com/document/d/1cwoA8YlNfaZ4PdfYTiRTrwqY4x8BMKV20iFh7swW4hM/edit"
+			"https://docs.google.com/document/d/1cwoA8YlNfaZ4PdfYTiRTrwqY4x8BMKV20iFh7swW4hM/",
+			"https://docs.google.com/document/d/1Mp3J0f4ayPhZ1J4pUHU0KhzFZYgSfcg6XTWMsgOxJyE/"
 		]
 	};//notes will be on google docs.
 	var top;
