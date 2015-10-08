@@ -22,7 +22,7 @@ $(function(){
 			//create a "box" for each notes topic
 			var i = iraw * (iname + 1);
 			var key = Object.keys(urls)[iname];
-			$("<div class='notesbox' name='"+key+"' id='notes"+iraw+"'></div>").appendTo("#notes")
+			$("<div class='notesbox' name='"+key+"' id='notes"+iraw+"'></div>").appendTo("#javanotes")
 				.append("<img src='../images/"+key+"/"+val.toLowerCase()+".PNG'></iframe>")
 				.append("<div class='links'>"+val+"</div>")
 				.css({
