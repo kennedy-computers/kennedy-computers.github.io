@@ -13,6 +13,7 @@ $(function(){
 			"https://docs.google.com/document/d/1cwoA8YlNfaZ4PdfYTiRTrwqY4x8BMKV20iFh7swW4hM/edit"
 		]
 	};//notes will be on google docs.
+	console.log(urls);
 	var top;
 	//java notes
 	$.each(urls, function(iname){
