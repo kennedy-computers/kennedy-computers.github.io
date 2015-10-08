@@ -20,7 +20,7 @@ $(function(){
 	for(var iname = 0; iname < Object.keys(urls).length; iname++){
 		$.each(names[iname], function(iraw, val){
 			//create a "box" for each notes topic
-			var i = iraw * iname;
+			var i = iraw * (iname + 1);
 			var key = Object.keys(urls)[iname];
 			$("<div class='notesbox' name='"+key+"' id='notes"+iraw+"'></div>").appendTo("#notes")
 				.append("<img src='../images/"+key+"/"+val.toLowerCase()+".PNG'></iframe>")
