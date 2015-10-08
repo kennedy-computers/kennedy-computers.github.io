@@ -19,8 +19,9 @@ $(function(){
 		$.each(names[iname], function(iraw, val){
 			//create a "box" for each notes topic
 			var i = iraw * iname;
-			$("<div class='notesbox' name='"+Object.keys(urls)[iname]+"' id='notes"+iraw+"'></div>").appendTo("#notes")
-				.append("<img src='../images/"+val.toLowerCase()+".PNG'></iframe>")
+			var key = Object.keys(urls)[iname];
+			$("<div class='notesbox' name='"+key+"' id='notes"+iraw+"'></div>").appendTo("#notes")
+				.append("<img src='../images/"+key+"/"+val.toLowerCase()+".PNG'></iframe>")
 				.append("<div class='links'>"+val+"</div>")
 				.css({
 					"left": "calc(8px + " + (i%3)*31 +"%)",
