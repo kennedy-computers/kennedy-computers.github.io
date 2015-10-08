@@ -16,9 +16,10 @@ $(function(){
 	var top;
 	//java notes
 	$.each(urls, function(iname){
-		$.each(names[iname], function(i, val){
+		$.each(names[iname], function(iraw, val){
 			//create a "box" for each notes topic
-			$("<div class='notesbox' name='"+Object.keys(urls)[iname]+"' id='notes"+i+"'></div>").appendTo("#notes")
+			var i = iraw * iname;
+			$("<div class='notesbox' name='"+Object.keys(urls)[iname]+"' id='notes"+iraw+"'></div>").appendTo("#notes")
 				.append("<img src='../images/"+val.toLowerCase()+".PNG'></iframe>")
 				.append("<div class='links'>"+val+"</div>")
 				.css({
