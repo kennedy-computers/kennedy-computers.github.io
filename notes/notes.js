@@ -16,7 +16,7 @@ $(function(){
 	console.log(urls);
 	var top;
 	//java notes
-	$.each(urls, function(iname){
+	for(var iname = 0; iname < Object.keys(urls).length; iname++){
 		$.each(names[iname], function(iraw, val){
 			//create a "box" for each notes topic
 			var i = iraw * iname;
@@ -28,7 +28,7 @@ $(function(){
 					"top": 6+Math.floor(i/3)*(invRatio*30)+Math.floor(i/3)+"vw"
 				});
 		});//iterate through 'names'
-	});
+	}
 	
 	$(".notesbox").click(function(){
 		window.open(urls[this.name][parseInt(this.id.replace("notes",""))]);//open doc on click
