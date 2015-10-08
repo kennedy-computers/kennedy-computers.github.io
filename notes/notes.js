@@ -13,7 +13,6 @@ $(function(){
 			"https://docs.google.com/document/d/1cwoA8YlNfaZ4PdfYTiRTrwqY4x8BMKV20iFh7swW4hM/edit"
 		]
 	};//notes will be on google docs.
-	console.log(urls);
 	var top;
 	//java notes
 	for(var iname = 0; iname < Object.keys(urls).length; iname++){
@@ -31,7 +30,7 @@ $(function(){
 	}
 	
 	$(".notesbox").click(function(){
-		window.open(urls[this.name][parseInt(this.id.replace("notes",""))]);//open doc on click
+		window.open(urls[this.getAttribute("name")][parseInt(this.id.replace("notes",""))]);//open doc on click
 	}).height(imgRatio*0.3*window.innerWidth);
 	var $nb = $(".notesbox").eq($(".notesbox").length-1);
 	$("h1").eq(1).css("top",$nb.offset().top+$nb.height()+"px").css("left","8px")
