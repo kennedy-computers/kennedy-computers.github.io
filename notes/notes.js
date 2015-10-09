@@ -23,7 +23,7 @@ $(function(){
 			var i = iraw * (iname + 1);
 			var key = Object.keys(urls)[iname];
 			$("<div class='notesbox' name='"+key+"' id='notes"+iraw+"'></div>").appendTo("#notes")
-				.append("<img src='../images/"+key+"/"+val.toLowerCase()+".PNG'></iframe>")
+				.append("<img src='../images/"+key+"/"+val.toLowerCase()+".PNG'>")
 				.append("<div class='links'>"+val+"</div>")
 				.css({
 					"left": "calc(8px + " + (i%3)*31 +"%)",
