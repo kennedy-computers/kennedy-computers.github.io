@@ -10,7 +10,9 @@ $(function(){
 			"The Print Statement",
 			"Variables and Datatypes",
 			"Booleans",
-			"Conditionals"
+			"Conditionals",
+			"Methods",
+			"Classes and Constructors"
 		]//arrays of names for each subject, object with properties not needed (like the urls object)
 	];//names of the notes
 	var urls = {
@@ -20,7 +22,9 @@ $(function(){
 			"https://docs.google.com/document/d/1cwoA8YlNfaZ4PdfYTiRTrwqY4x8BMKV20iFh7swW4hM/",
 			"https://docs.google.com/document/d/1zmaiXYm-iQD3DJfuyitXVO64pXnlhW03YHRNcLhzPTE/",
 			"https://docs.google.com/document/d/1JqIzkPY19MvzYmgLwNEBZI0AJzMfeO5BP8VRaahB07M/",
-			"https://docs.google.com/document/d/1Mp3J0f4ayPhZ1J4pUHU0KhzFZYgSfcg6XTWMsgOxJyE/"
+			"https://docs.google.com/document/d/1Mp3J0f4ayPhZ1J4pUHU0KhzFZYgSfcg6XTWMsgOxJyE/",
+			"https://docs.google.com/document/d/1nhHH8p6iZIXMt9I0Mz0A0_cXNXwK7Q5PqFRDFvxE8hM/",
+			"https://docs.google.com/document/d/1vav7Vj_66pJRYuOqVY1gU-nbQJfd6fcnQxjVv8D5LLQ/"
 		] //add each subject as a new property of object urls
 	};//notes will be on google docs.
 	var top;
