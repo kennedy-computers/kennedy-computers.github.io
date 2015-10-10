@@ -32,7 +32,7 @@ $(function(){
 			var key = Object.keys(urls)[iname];
 			$("<div class='notesbox' name='"+key+"' id='notes"+iraw+"'></div>").appendTo("#notes")
 				.append("<img src='../images/"+key+"/"+val.toLowerCase()+".PNG'>")
-				.append("<span class='links'>"+val+"</span>")
+				.append($("<div class='links'></div>").append("<span>"+val+"</span>"))
 				.css({
 					"left": "calc(8px + " + (i%3)*31 +"%)",
 					"top": 6+Math.floor(i/3)*(invRatio*30)+Math.floor(i/3)+"vw"
