@@ -9,7 +9,8 @@ $(function(){
 			"Bare Minimum Code",
 			"The Print Statement",
 			"Conditionals",
-			"Variables and Datatypes"
+			"Variables and Datatypes",
+			"Booleans"
 		]//arrays of names for each subject, object with properties not needed (like the urls object)
 	];//names of the notes
 	var urls = {
@@ -18,7 +19,8 @@ $(function(){
 			"https://docs.google.com/document/d/1Qb4OkBEGyo0LzwkP6AnsETOBdB1wpBTHEutcbNxrnko/",
 			"https://docs.google.com/document/d/1cwoA8YlNfaZ4PdfYTiRTrwqY4x8BMKV20iFh7swW4hM/",
 			"https://docs.google.com/document/d/1Mp3J0f4ayPhZ1J4pUHU0KhzFZYgSfcg6XTWMsgOxJyE/",
-			"https://docs.google.com/document/d/1zmaiXYm-iQD3DJfuyitXVO64pXnlhW03YHRNcLhzPTE/"
+			"https://docs.google.com/document/d/1zmaiXYm-iQD3DJfuyitXVO64pXnlhW03YHRNcLhzPTE/",
+			"https://docs.google.com/document/d/1JqIzkPY19MvzYmgLwNEBZI0AJzMfeO5BP8VRaahB07M/"
 		] //add each subject as a new property of object urls
 	};//notes will be on google docs.
 	var top;
