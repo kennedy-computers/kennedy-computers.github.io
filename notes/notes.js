@@ -49,5 +49,5 @@ $(function(){
 	var $nb = $(".notesbox").eq($(".notesbox").length-1);//get the last notesbox element
 	$("h1").eq(1).css("top",$nb.offset().top+$nb.height()+"px").css("left","8px")
 	//get the last heading and set it to under the last notesbox
-	window.onload = function(){$(".links").css("font-size", 0.7*$(".links").height()+"px");}
+	window.onload = function(){$(".links").css("font-size", 0.6*$(".links").height()+"px");}
 });
