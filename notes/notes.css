@@ -52,7 +52,10 @@ body{
 	border-top:none;
 	border-left:none;
 	text-decoration: underline;
-	vertical-align: middle;
+}
+.links span{
+	display:inline-block;
+	vertical-align:middle;
 }
 img{
 	position:absolute;
