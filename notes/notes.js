@@ -32,7 +32,6 @@ $(function(){
 			var key = Object.keys(urls)[iname];
 			$("<div class='notesbox' name='"+key+"' id='notes"+iraw+"'></div>").appendTo("#notes")
 				.append("<img src='../images/"+key+"/"+val.toLowerCase()+".PNG'>")
-				.append("<br>")
 				.append("<div class='links'>"+val+"</div>")
 				.css({
 					"left": "calc(8px + " + (i%3)*31 +"%)",
@@ -40,7 +39,7 @@ $(function(){
 				});
 		});
 	}//iterate through urls object and subarray to create note boxes
-	
+	$(".links").css("font-size", $(".links").height());//set font size to fill entire link box
 	$(".notesbox").click(function(){ //click event to go to url of notes when notesbox clicked
 		window.open(urls[this.getAttribute("name")][parseInt(this.id.replace("notes",""))]);//open doc on click
 		//window.open = opens the document
