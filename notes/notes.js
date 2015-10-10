@@ -39,7 +39,7 @@ $(function(){
 				});
 		});
 	}//iterate through urls object and subarray to create note boxes
-	$(".links").css("font-size", $(".links").height()+"px");//set font size to fill entire link box
+	setTimeout(function(){$(".links").css("font-size", $(".links").height()+"px");},7000);//set font size to fill entire link box}
 	$(".notesbox").click(function(){ //click event to go to url of notes when notesbox clicked
 		window.open(urls[this.getAttribute("name")][parseInt(this.id.replace("notes",""))]);//open doc on click
 		//window.open = opens the document
