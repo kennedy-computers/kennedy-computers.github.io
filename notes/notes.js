@@ -39,7 +39,6 @@ $(function(){
 				});
 		});
 	}//iterate through urls object and subarray to create note boxes
-	setTimeout(function(){$(".links").css("font-size", $(".links").height()+"px");},7000);//set font size to fill entire link box}
 	$(".notesbox").click(function(){ //click event to go to url of notes when notesbox clicked
 		window.open(urls[this.getAttribute("name")][parseInt(this.id.replace("notes",""))]);//open doc on click
 		//window.open = opens the document
@@ -50,4 +49,5 @@ $(function(){
 	var $nb = $(".notesbox").eq($(".notesbox").length-1);//get the last notesbox element
 	$("h1").eq(1).css("top",$nb.offset().top+$nb.height()+"px").css("left","8px")
 	//get the last heading and set it to under the last notesbox
+	$(".links").css("font-size", $(".links").height()+"px");
 });
