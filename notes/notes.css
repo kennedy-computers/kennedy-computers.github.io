@@ -52,6 +52,7 @@ body{
 	border-top:none;
 	border-left:none;
 	text-decoration: underline;
+	vertical-align: middle;
 }
 img{
 	position:absolute;
