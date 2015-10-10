@@ -57,6 +57,8 @@ body{
 	vertical-align:middle;
 	text-decoration:underline;
 	font-weight: bold;
+	position: absolute;
+	bottom" 3px;
 }
 img{
 	position:absolute;
