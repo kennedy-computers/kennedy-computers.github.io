@@ -5,6 +5,13 @@
 	border: 1px solid black;
 	cursor: pointer;
 }
+#objc{
+	position:absolute;
+	display:inline-block;
+	border-radius:10%;
+	width:50%;
+	height:50%;
+}
 #notes{
 	display:inline-block;
 	width: 100%;
