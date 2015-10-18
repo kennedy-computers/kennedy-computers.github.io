@@ -9,8 +9,9 @@
 	position:absolute;
 	display:inline-block;
 	border-radius:10%;
-	width:50%;
-	height:50%;
+	width:20%;
+	height:20%;
+	border-color:black;
 }
 #notes{
 	display:inline-block;
